@@ -1,20 +1,20 @@
 package com.drawelement;
 
-public class Line2d implements Shape2d {
+public class Line3d implements Shape3d {
 
     private Point3d a, b;
 
-    public Line2d(Point3d a, Point3d b) {
+    public Line3d(Point3d a, Point3d b) {
         this.a = a;
         this.b = b;
     }
 
-    public Line2d() {
+    public Line3d() {
         this.a = new Point3d();
-        this.b = new Point3d(1, 1);
+        this.b = new Point3d(1, 1, 1);
     }
 
-    public Line2d(Point3d Point3d) {
+    public Line3d(Point3d Point3d) {
         this.a = new Point3d();
         this.b = Point3d;
     }

@@ -1,4 +1,4 @@
-import com.drawelement.Point2d;
+import com.drawelement.Point3d;
 import com.drawelement.Shape;
 
 public class Main {
@@ -21,7 +21,7 @@ class MyClass implements Shape{
     }
 
     @Override
-    public Point2d[] getShapeCoord() {
-        return new Point2d[0];
+    public Point3d[] getShapeCoord() {
+        return new Point3d[0];
     }
 }

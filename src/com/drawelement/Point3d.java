@@ -10,12 +10,12 @@ public class Point3d extends Point {
         super(x, y, 0);
     }
 
-    public Point3d(Point2d point2d) {
-        super(point2d.getX(), point2d.getY(), 0);
-    }
-
     public Point3d(double x, double y, double z) {
         super(x, y, z);
+    }
+
+    public Point3d(Point3d Point3d) {
+        super(Point3d.getX(), Point3d.getY(), 0);
     }
 
 }
