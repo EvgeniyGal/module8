@@ -1,3 +1,4 @@
+import com.drawelement.Point;
 import com.drawelement.Shape;
 
 public class Main {
@@ -17,5 +18,10 @@ class MyClass implements Shape{
     @Override
     public double getPerimetr() {
         return 0;
+    }
+
+    @Override
+    public Point[] getPointCoord() {
+        return new Point[0];
     }
 }
