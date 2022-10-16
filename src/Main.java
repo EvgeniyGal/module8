@@ -21,7 +21,7 @@ class MyClass implements Shape{
     }
 
     @Override
-    public Point[] getPointCoord() {
+    public Point[] getShapeCoord() {
         return new Point[0];
     }
 }
