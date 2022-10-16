@@ -1,43 +1,43 @@
 package com.drawelement;
 
-public class triangle2d implements element2d {
-    Point a;
-    Point b;
-    Point c;
+public class Triangle2d implements Shape2d {
+    Point2d a;
+    Point2d b;
+    Point2d c;
 
-    public triangle2d(Point a, Point b, Point c) {
+    public Triangle2d(Point2d a, Point2d b, Point2d c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
-    public triangle2d() {
-        this.a = new Point();
-        this.b = new Point(1, 1, 0);
-        this.c = new Point(0, 1, 0);
+    public Triangle2d() {
+        this.a = new Point2d();
+        this.b = new Point2d(1, 1);
+        this.c = new Point2d(0, 1);
     }
 
-    public Point getA() {
+    public Point2d getA() {
         return a;
     }
 
-    public void setA(Point a) {
+    public void setA(Point2d a) {
         this.a = a;
     }
 
-    public Point getB() {
+    public Point2d getB() {
         return b;
     }
 
-    public void setB(Point b) {
+    public void setB(Point2d b) {
         this.b = b;
     }
 
-    public Point getC() {
+    public Point2d getC() {
         return c;
     }
 
-    public void setC(Point c) {
+    public void setC(Point2d c) {
         this.c = c;
     }
 
@@ -53,7 +53,7 @@ public class triangle2d implements element2d {
     }
 
     @Override
-    public Point[] getShapeCoord() {
-        return new Point[]{a, b, c};
+    public Point2d[] getShapeCoord() {
+        return new Point2d[]{a, b, c};
     }
 }
