@@ -36,7 +36,7 @@ public class Line2D implements IShape2D {
     }
 
     public double getLength() {
-        return getDistAtoB(a, b);
+        return getDist(a, b);
     }
 
     @Override

@@ -43,12 +43,12 @@ public class Triangle2D implements IShape2D {
 
     @Override
     public double getArea() {
-        return 0.5 * Math.abs(getDistAtoB(a, b) * getDistAtoB(a, c));
+        return 0.5 * Math.abs(getDist(a, b) * getDist(a, c));
     }
 
     @Override
     public double getPerimetr() {
-        return getDistAtoB(a, b) + getDistAtoB(b, c) + getDistAtoB(c, a);
+        return getDist(a, b) + getDist(b, c) + getDist(c, a);
     }
 
     @Override

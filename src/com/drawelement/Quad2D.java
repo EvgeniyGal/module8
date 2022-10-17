@@ -54,13 +54,13 @@ public class Quad2D implements IShape2D {
 
     @Override
     public double getArea() {
-        return Math.abs(getDistAtoB(a, c) * getDistAtoB(a, d));
+        return Math.abs(getDist(a, c) * getDist(a, d));
     }
 
     @Override
     public double getPerimetr() {
-        return getDistAtoB(a, b) + getDistAtoB(b, c) +
-                getDistAtoB(c, d) + getDistAtoB(d, a);
+        return getDist(a, b) + getDist(b, c) +
+                getDist(c, d) + getDist(d, a);
     }
 
     @Override

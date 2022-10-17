@@ -36,7 +36,7 @@ public class Line3D implements IShape3D {
     }
 
     public double getLength() {
-        return getDistAtoB(a, b);
+        return getDist(a, b);
     }
 
     @Override
