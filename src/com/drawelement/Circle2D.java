@@ -33,7 +33,7 @@ public class Circle2D implements IShape2D {
 
     @Override
     public double getArea() {
-        return PI * getDist(c, r1);
+        return PI * getDist(c, r1) * getDist(c, r1);
     }
 
     @Override
