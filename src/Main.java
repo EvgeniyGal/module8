@@ -1,5 +1,5 @@
-import com.drawelement.Point3d;
-import com.drawelement.Shape;
+import com.drawelement.Point2D;
+import com.drawelement.IShape;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,21 +7,3 @@ public class Main {
     }
 }
 
-class MyClass implements Shape{
-
-    @Override
-    public double getArea() {
-        double ghh = Shape.PI;
-        return 0;
-    }
-
-    @Override
-    public double getPerimetr() {
-        return 0;
-    }
-
-    @Override
-    public Point3d[] getShapeCoord() {
-        return new Point3d[0];
-    }
-}

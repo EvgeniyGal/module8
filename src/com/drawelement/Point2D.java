@@ -1,20 +1,20 @@
 package com.drawelement;
 
-public class Point2d extends Point {
+public class Point2D extends Point {
 
     private double y;
 
-    public Point2d(){
+    public Point2D(){
 
         this(0, 0);
     }
 
-    public Point2d(double x, double y) {
+    public Point2D(double x, double y) {
         super(x);
         this.y = y;
     }
 
-    public Point2d(double y) {
+    public Point2D(double y) {
         this.y = y;
     }
 
