@@ -55,4 +55,9 @@ public class Triangle3D implements IShape3D {
     public Point3D[] getShapeCoord() {
         return new Point3D[]{a, b, c};
     }
+
+    @Override
+    public String toString() {
+        return "Name: 3D Triangle, coordinates is: a" + a + ", b"+ b + ", c" + c + ".";
+    }
 }

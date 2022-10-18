@@ -54,4 +54,8 @@ public class Line3D implements IShape3D {
         return new Point3D[]{a, b};
     }
 
+    @Override
+    public String toString() {
+        return "Name: 3D Line, coordinates is: a" + a + ", b"+ b + ".";
+    }
 }

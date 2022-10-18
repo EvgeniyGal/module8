@@ -20,4 +20,8 @@ public class Point {
         this.x = x;
     }
 
+    @Override
+    public String toString() {
+        return "(" + x + ")";
+    }
 }

@@ -67,4 +67,9 @@ public class Quad3D implements IShape3D {
     public Point3D[] getShapeCoord() {
         return new Point3D[]{a, b, c, d};
     }
+
+    @Override
+    public String toString() {
+        return "Name: 3D Quadrilateral, coordinates is: a" + a + ", b"+ b + ", c" + c + ", d" + d +".";
+    }
 }

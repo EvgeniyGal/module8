@@ -67,4 +67,9 @@ public class Quad2D implements IShape2D {
     public Point2D[] getShapeCoord() {
         return new Point2D[]{a, b, c, d};
     }
+
+    @Override
+    public String toString() {
+        return "Name: 3D Quadrilateral, coordinates is: a" + a + ", b"+ b + ", c" + c + ", d" + d +".";
+    }
 }

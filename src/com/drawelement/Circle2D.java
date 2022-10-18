@@ -45,4 +45,9 @@ public class Circle2D implements IShape2D {
     public Point2D[] getShapeCoord() {
         return new Point2D[]{c, r1};
     }
+
+    @Override
+    public String toString() {
+        return "Name: 2D Circle, coordinates is: center" + c + ", radius" + r1 + ".";
+    }
 }

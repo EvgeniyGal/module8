@@ -55,4 +55,9 @@ public class Triangle2D implements IShape2D {
     public Point2D[] getShapeCoord() {
         return new Point2D[]{a, b, c};
     }
+
+    @Override
+    public String toString() {
+        return "Name: 2D Triangle, coordinates is: a" + a + ", b"+ b + ", c" + c + ".";
+    }
 }

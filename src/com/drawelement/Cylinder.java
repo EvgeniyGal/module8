@@ -1,6 +1,6 @@
 package com.drawelement;
 
-public class Cylinder implements ISolid {
+public class Cylinder implements ISolid, IShape3D {
 
     private Point3D c;
     private Point3D r;
@@ -34,5 +34,20 @@ public class Cylinder implements ISolid {
     @Override
     public Point3D[] getShapeCoord() {
         return new Point3D[]{c, r, h};
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * Math.pow(getDist(c, r), 2);
+    }
+
+    @Override
+    public double getPerimetr() {
+        return 2 + Math.PI * 2 * getDist(c, r) * 2;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: Cylinder, coordinates is: center" + c + ", radius"+ r + ", height" + h + ".";
     }
 }

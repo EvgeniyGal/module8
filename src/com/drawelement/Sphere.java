@@ -1,6 +1,6 @@
 package com.drawelement;
 
-public class Sphere implements ISolid {
+public class Sphere implements ISolid, IShape3D {
 
     private Point3D c;
     private Point3D r;
@@ -28,5 +28,20 @@ public class Sphere implements ISolid {
     @Override
     public Point3D[] getShapeCoord() {
         return new Point3D[]{c, r};
+    }
+
+    @Override
+    public double getArea() {
+        return 0;
+    }
+
+    @Override
+    public double getPerimetr() {
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: Sphere, coordinates is: center" + c + ", radius"+ r + ".";
     }
 }

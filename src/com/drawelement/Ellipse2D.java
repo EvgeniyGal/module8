@@ -62,4 +62,9 @@ public class Ellipse2D implements IShape2D {
     public Point2D[] getShapeCoord() {
         return new Point2D[]{c, r1, r2};
     }
+
+    @Override
+    public String toString() {
+        return "Name: 2D Ellipse, coordinates is: center" + c + ", radius 1"+ r1 + ", radius 2" + r2 + ".";
+    }
 }

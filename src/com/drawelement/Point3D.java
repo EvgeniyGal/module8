@@ -31,4 +31,9 @@ public class Point3D extends Point2D {
     public void setZ(double z) {
         this.z = z;
     }
+
+    @Override
+    public String toString() {
+        return "(" + getX() + ", " + getY() + ", " + z + ")";
+    }
 }

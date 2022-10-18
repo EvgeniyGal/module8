@@ -54,4 +54,8 @@ public class Line2D implements IShape2D {
         return new Point2D[]{a, b};
     }
 
+    @Override
+    public String toString() {
+        return "Name: 2D Line, coordinates is: a" + a + ", b"+ b + ".";
+    }
 }

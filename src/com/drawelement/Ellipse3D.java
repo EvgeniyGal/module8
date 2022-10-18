@@ -61,4 +61,9 @@ public class Ellipse3D implements IShape3D {
     public Point3D[] getShapeCoord() {
         return new Point3D[]{c, r1, r2};
     }
+
+    @Override
+    public String toString() {
+        return "Name: 3D Ellipse, coordinates is: center" + c + ", radius 1"+ r1 + ", radius 2" + r2 + ".";
+    }
 }

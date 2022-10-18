@@ -14,7 +14,6 @@ public class Circle3D implements IShape3D {
         this.r1 = new Point3D(1, 1);
     }
 
-
     public Point3D getC() {
         return c;
     }
@@ -44,5 +43,10 @@ public class Circle3D implements IShape3D {
     @Override
     public Point3D[] getShapeCoord() {
         return new Point3D[]{c, r1};
+    }
+
+    @Override
+    public String toString() {
+        return "Name: 3D Circle, coordinates is: center" + c + ", radius" + r1 + ".";
     }
 }
