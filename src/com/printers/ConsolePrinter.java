@@ -10,7 +10,7 @@ import com.drawelement.Point;
 public class ConsolePrinter {
 
     /**
-     * This method print all type of shapes.
+     * This method prints all type of shapes.
      * */
     public void shapePrinter(IShape[] iShapes) {
         for (IShape iShape :
@@ -18,25 +18,35 @@ public class ConsolePrinter {
             System.out.println(iShape);
         }
     }
+/**
+ * This method prints all type of elements
+ * */
 
-    /**
-     * This method print all type of solids.
-     * */
-    public void solidPrinter(ISolid[] iSolids) {
-        for (ISolid iSolid :
-                iSolids) {
-            System.out.println(iSolid);
+    public <E> void elementPrinter(E[] elements) {
+        for (E element :
+                elements) {
+            System.out.println(element);
         }
     }
 
-    /**
-     * This method print all type of points.
-     * */
-    public void pointPrinter(Point[] points) {
-        for (Point point :
-                points) {
-            System.out.println(point);
-        }
-    }
+//    /**
+//     * This method print all type of solids.
+//     * */
+//    public void solidPrinter(ISolid[] iSolids) {
+//        for (ISolid iSolid :
+//                iSolids) {
+//            System.out.println(iSolid);
+//        }
+//    }
+//
+//    /**
+//     * This method print all type of points.
+//     * */
+//    public void pointPrinter(Point[] points) {
+//        for (Point point :
+//                points) {
+//            System.out.println(point);
+//        }
+//    }
 
 }

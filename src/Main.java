@@ -30,9 +30,9 @@ public class Main {
 
         //Print elements
 
-        consolePrinter.pointPrinter(new Point[]{a1d, a2d, b2d, c3d});
+        consolePrinter.elementPrinter(new Point[]{a1d, a2d, b2d, c3d});
         consolePrinter.shapePrinter(new IShape[]{line2D, line3D, triangle2D, triangle3D, circle3D});
-        consolePrinter.solidPrinter(new ISolid[]{sphere, cylinder});
+        consolePrinter.elementPrinter(new ISolid[]{sphere, cylinder});
 
 //        Print elements detail
         System.out.println("Area of 2D Triangle is: " + triangle2D.getArea() + " m2.");
